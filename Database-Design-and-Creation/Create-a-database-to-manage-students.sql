@@ -12,7 +12,7 @@ StudentName varchar(30) not null,
 Address varchar(50),
 Phone varchar(20),
 Status bit,
-ClassID int Not null
+ClassID int Not null, foreign key (ClassID) references Class(ClassID)
 );
 create table Subject(
 SubID int not null primary key auto_increment,
